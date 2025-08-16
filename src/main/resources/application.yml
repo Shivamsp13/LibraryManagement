@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/librarymanagement
+    username: root
+    password: your_new_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secretkey: "1f7c4a9d-8b5a-4c72-95c1-dc3b32aaf5e1"  # Secure random UUID
+  expiration: 86400000   # 1 day in milliseconds
